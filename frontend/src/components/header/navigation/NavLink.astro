@@ -1,0 +1,10 @@
+---
+// Define the props for the NavLink component
+const { href, label } = Astro.props;
+---
+
+<li>
+  <a href={href} class="text-black flex hover:underline">
+    {label}
+  </a>
+</li>

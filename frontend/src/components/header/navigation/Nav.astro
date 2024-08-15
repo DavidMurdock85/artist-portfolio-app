@@ -1,0 +1,16 @@
+---
+import NavLink from "./NavLink.astro";
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+---
+
+<nav>
+  <ul class="flex justify-center gap-4 p-0 m-0 list-none">
+    {links.map((link) => <NavLink href={link.href} label={link.label} />)}
+  </ul>
+</nav>

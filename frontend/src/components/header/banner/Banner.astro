@@ -1,0 +1,20 @@
+---
+import BannerTitle from "./BannerTitle.astro";
+import BannerImage from "./BannerImage.astro";
+import Nav from "../navigation/Nav.astro";
+
+interface Props {
+  title: string;
+  imageUrl: string;
+}
+
+const { title, imageUrl } = Astro.props;
+---
+
+<ul class="flex flex-col text-black">
+  <BannerTitle title={title} />
+  <BannerImage imageUrl={imageUrl} />
+  <li class="flex flex-row justify-center text-2xl p-2">
+    <Nav />
+  </li>
+</ul>

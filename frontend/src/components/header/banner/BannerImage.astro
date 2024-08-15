@@ -1,0 +1,15 @@
+---
+const { imageUrl } = Astro.props;
+---
+
+<style>
+  .banner {
+    background-image: url({imageUrl});
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+<li class="banner flex flex-row justify-center text-2xl p-2">
+  <!-- Content can be added here if needed -->
+</li>
